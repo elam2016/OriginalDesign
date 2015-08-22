@@ -27,7 +27,7 @@ void head()
     int y = 60;
 
     //mane
-    quad(x, y-40, x+20, y-40, x+15, y-35, x+5, y-35);
+    quad(x, y-20, x+20, y-20, x+15, y-15, x+5, y-15);
     //head
 	fill(255);
     ellipse(x+10,y+40,60,100);
