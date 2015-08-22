@@ -1,6 +1,7 @@
 void setup()
 {
 	size(400,300);
+    background(grey, alpha);
 }
 void draw()
 {
@@ -27,7 +28,15 @@ void head()
     int y = 60;
 
     //mane
-    quad(x, y-20, x+20, y-20, x+15, y-15, x+5, y-15);
+    noStroke();
+    colorMode(HSB, 100);
+    for (int i = 0; i < 100; i++) {
+        for (int j = 0; j < 100; j++) {
+        stroke(i, j, 100);
+        point(i, j);
+        }
+    }
+    quad(x-5, y-25, x+25, y-25, x+20, y-15, x+10, y-15);
     //head
 	fill(255);
     ellipse(x+10,y+40,60,100);
