@@ -37,6 +37,7 @@ void head()
         }
     }
     quad(x-5, y-25, x+25, y-25, x+20, y-15, x+10, y-15);
+    stroke(0);
     //head
 	fill(255);
     ellipse(x+10,y+40,60,100);
