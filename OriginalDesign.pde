@@ -1,6 +1,6 @@
 void setup()
 {
-	size(215,350);
+	size(400,300);
 }
 void draw()
 {
@@ -9,8 +9,8 @@ void draw()
 }
 void body()
 {
-	int x = 50;
-	int y = 50;
+	int x = 200;
+	int y = 60;
 	//body
     fill(255);
     ellipse(x+10,y+115,90,140);
@@ -23,11 +23,11 @@ void body()
 }
 void head()
 {
-	int x = 50;
-    int y = 50;
+	int x = 200;
+    int y = 60;
 
     //mane
-    quad(x, y, x+20, y, x+5, y+15, x+15, y+15);
+    quad(x, y-40, x+20, y-40, x+15, y-35, x+5, y-35);
     //head
 	fill(255);
     ellipse(x+10,y+40,60,100);
