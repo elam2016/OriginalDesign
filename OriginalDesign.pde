@@ -33,7 +33,7 @@ void head()
     //Color[] colors = {Color.RED, Color.ORANGE, Color.YELLOW, Color.GREEN, Color.BLUE, Color.VIOLET};
     //LinearGradientPaint p =
         //new LinearGradientPaint(start, end, dist, colors);
-    quad(x-5, y-25, x+25, y-25, x+20, y-15, x+10, y-15);
+    quad(x-5, y-25, x+25, y-25, x+20, y-15, x, y-15);
     //head
 	fill(255);
     ellipse(x+10,y+40,60,100);
