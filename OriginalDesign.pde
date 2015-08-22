@@ -28,16 +28,13 @@ void head()
     int y = 60;
 
     //mane
-    noStroke();
-    colorMode(HSB, 100);
-    for (int i = 0; i < 100; i++) {
-        for (int j = 0; j < 100; j++) {
-        stroke(i, j, 100);
-        point(i, j);
-        }
-    }
+    Point2D start = new Point2D.Float(0, 0);
+    Point2D end = new Point2D.Float(50, 50);
+    float[] dist = {0.0f, 0.2f, 1.0f};
+    Color[] colors = {Color.RED, Color.ORANGE, Color.YELLOW, Color.GREEN, Color.BLUE, Color.VIOLET};
+    LinearGradientPaint p =
+        new LinearGradientPaint(start, end, dist, colors);
     quad(x-5, y-25, x+25, y-25, x+20, y-15, x+10, y-15);
-    stroke(0);
     //head
 	fill(255);
     ellipse(x+10,y+40,60,100);
