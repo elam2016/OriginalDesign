@@ -27,12 +27,12 @@ void head()
     int y = 60;
 
     //mane
-    Point2D start = new Point2D.Float(0, 0);
-    Point2D end = new Point2D.Float(50, 50);
-    float[] dist = {0.0f, 0.2f, 1.0f};
-    Color[] colors = {Color.RED, Color.ORANGE, Color.YELLOW, Color.GREEN, Color.BLUE, Color.VIOLET};
-    LinearGradientPaint p =
-        new LinearGradientPaint(start, end, dist, colors);
+    //Point2D start = new Point2D.Float(0, 0);
+    //Point2D end = new Point2D.Float(50, 50);
+    //float[] dist = {0.0f, 0.2f, 1.0f};
+    //Color[] colors = {Color.RED, Color.ORANGE, Color.YELLOW, Color.GREEN, Color.BLUE, Color.VIOLET};
+    //LinearGradientPaint p =
+        //new LinearGradientPaint(start, end, dist, colors);
     quad(x-5, y-25, x+25, y-25, x+20, y-15, x+10, y-15);
     //head
 	fill(255);
