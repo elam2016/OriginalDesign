@@ -23,20 +23,23 @@ void body()
 }
 void head()
 {
-	//head
+	int x = 100;
+    int y = 100;
+
+    //head
 	fill(255);
-    ellipse(x+10,140,60,100);
+    ellipse(x+10,y+40,60,100);
     //eyes
-    ellipse(90,120,20,20);
-    ellipse(130,120,20,20);
+    ellipse(x-10,y+20,20,20);
+    ellipse(x+30,y+20,20,20);
     //pupils
     fill(0);
-    ellipse(x-10,100+20,2,2);
-    ellipse(x+30,100+20,2,2);
+    ellipse(x-10,y+20,2,2);
+    ellipse(x+30,y+20,2,2);
     //pupils
-    ellipse(x-10,100+75,2,2);
-    ellipse(x+30,100+75,2,2);
+    ellipse(x-10,y+75,2,2);
+    ellipse(x+30,y+75,2,2);
     //horn
     fill(196, 170, 0);
-    triangle(x,y,100+10,100-50,100+20,100);
+    triangle(x, y, x+10, y-50, x+20, y);
 }
