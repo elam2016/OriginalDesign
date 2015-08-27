@@ -14,9 +14,9 @@ import java.io.IOException;
 
 public class OriginalDesign extends PApplet {
 
-int x = 400;
-int y = 70;
-float rainbowY = 120;
+float x = 400;
+float y = 50;
+float rainbowY = y + 80;
 
 public void setup()
 {
@@ -25,18 +25,21 @@ public void setup()
 public void draw()
 {
     background(50,150,200);
-    x = x + 2;
+    x = x + 1.5f;
     if (x > 880) {
         x = -80;
     }
-    rainbowY+= .5f;
-    if (rainbowY > 150) {
-        rainbowY = 120; 
+    y += .25f;
+    if (y > 110) {
+        y = 50; 
     }
-    println(rainbowY);
+    rainbowY += .25f;
+    if (rainbowY > 190) {
+        rainbowY = 130; 
+    }
     rainbow();
-	body();
-	head();
+    body();
+    head();
 }
 public void rainbow()
 {
@@ -70,8 +73,8 @@ public void body()
 public void head()
 {
     //mane
-        fill((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
-        quad(x-15, y-25, x+15, y-25, x+10, y, x-10, y);
+        fill((int)(Math.random()*220)+25, (int)(Math.random()*220)+25, (int)(Math.random()*220)+25);
+        quad(x-20, y-25, x+20, y-25, x+10, y, x-10, y);
     //head
     	fill(255);
         ellipse(x,y+40,60,100);
