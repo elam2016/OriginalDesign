@@ -1,7 +1,6 @@
 int x = 400;
 int y = 70;
-int rainbowY = 120;
-int rainbowSpeed = 1;
+float rainbowY = 120;
 
 void setup()
 {
@@ -14,12 +13,9 @@ void draw()
     if (x > 880) {
         x = -80;
     }
+    rainbowY+= .5;
     if (rainbowY > 150) {
-        rainbowSpeed *= -1; 
-    } else if (rainbowY < 80) {
-        rainbowSpeed *= 1;
-    } else {
-        rainbowY += rainbowSpeed;
+        rainbowY = 120; 
     }
     println(rainbowY);
     rainbow();

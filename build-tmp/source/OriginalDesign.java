@@ -16,8 +16,7 @@ public class OriginalDesign extends PApplet {
 
 int x = 400;
 int y = 70;
-int rainbowY = 120;
-int rainbowSpeed = 1;
+float rainbowY = 120;
 
 public void setup()
 {
@@ -30,12 +29,9 @@ public void draw()
     if (x > 880) {
         x = -80;
     }
+    rainbowY+= .5f;
     if (rainbowY > 150) {
-        rainbowSpeed *= -1; 
-    } else if (rainbowY < 80) {
-        rainbowSpeed *= 1;
-    } else {
-        rainbowY += rainbowSpeed;
+        rainbowY = 120; 
     }
     println(rainbowY);
     rainbow();
