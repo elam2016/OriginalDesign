@@ -41,19 +41,19 @@ public void draw()
 public void rainbow()
 {
     fill(255, 0, 0); //red
-    rect(0, rainbowY, 800, 10);
+    rect(-1, rainbowY, 810, 10);
     fill(255, 165, 0); //orange
-    rect(0, rainbowY+10, 800, 10);
+    rect(-1, rainbowY+10, 810, 10);
     fill(255, 255, 0); //yellow
-    rect(0, rainbowY+20, 800, 10);
+    rect(-1, rainbowY+20, 810, 10);
     fill(0, 255, 0); //green
-    rect(0, rainbowY+30, 800, 10);
+    rect(-1, rainbowY+30, 810, 10);
     fill(0, 150, 255); //blue
-    rect(0, rainbowY+40, 800, 10);
+    rect(-1, rainbowY+40, 810, 10);
     fill(0, 0, 255); //indigo
-    rect(0, rainbowY+50, 800, 10);
+    rect(-1, rainbowY+50, 810, 10);
     fill(76, 0, 153); //violet
-    rect(0, rainbowY+60, 800, 10);
+    rect(-1, rainbowY+60, 810, 10);
 }
 public void body()
 {
