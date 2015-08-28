@@ -1,5 +1,5 @@
-float x = 400;
-float y = 50;
+float x = 100;
+float y = 110;
 float rainbowY = y + 80;
 
 void setup()
@@ -13,13 +13,13 @@ void draw()
     if (x > 880) {
         x = -80;
     }
-    y += .25;
-    if (y > 110) {
-        y = 50; 
+    y -= .25;
+    if (y < 50) {
+        y = 110; 
     }
-    rainbowY += .25;
-    if (rainbowY > 190) {
-        rainbowY = 130; 
+    rainbowY -= .25;
+    if (rainbowY < 130) {
+        rainbowY = 190; 
     }
     rainbow();
     body();
