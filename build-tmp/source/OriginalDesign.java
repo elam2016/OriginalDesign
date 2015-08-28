@@ -40,6 +40,7 @@ public void draw()
     rainbow();
     body();
     head();
+    frameRate(25);
 }
 public void rainbow()
 {

@@ -24,6 +24,7 @@ void draw()
     rainbow();
     body();
     head();
+    frameRate(25);
 }
 void rainbow()
 {
