@@ -28,6 +28,7 @@ void draw()
 }
 void rainbow()
 {
+    noStroke();
     fill(255, 0, 0); //red
     rect(-1, rainbowY, 810, 10);
     fill(255, 165, 0); //orange
@@ -44,7 +45,8 @@ void rainbow()
     rect(-1, rainbowY+60, 810, 10);
 }
 void body()
-{
+{   
+    stroke(0);
 	//body
         fill(255);
         ellipse(x,y+110,90,140);
